@@ -1,0 +1,32 @@
+# Maven
+target/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Other IDEs
+.settings/
+.vscode/
+.classpath
+.project
+
+# Operating system
+.DS_Store
+
+# Logs
+*.log
+
+# Environment and secrets
+.env
+.env.*
+*.secret
+*.key
+*.pem
+
+# Local configuration
+database.properties
+application-local.properties
