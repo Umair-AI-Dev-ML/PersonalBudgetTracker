@@ -1,0 +1,540 @@
+
+/* ==========================================
+   PERSONAL BUDGET TRACKER
+   Professional Dashboard Design
+   ========================================== */
+
+
+/* Global Colors */
+:root {
+    --primary-color: #2563eb;
+    --primary-dark: #1d4ed8;
+
+    --success-color: #16a34a;
+    --danger-color: #dc3545;
+    --warning-color: #f59e0b;
+
+    --background-color: #f4f7fb;
+    --card-background: #ffffff;
+
+    --heading-color: #172b4d;
+    --text-color: #334155;
+    --muted-color: #64748b;
+
+    --border-color: #e2e8f0;
+}
+
+
+/* ==========================================
+   BODY
+   ========================================== */
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Arial, sans-serif;
+
+    margin: 0;
+    padding: 0;
+
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   NAVIGATION BAR
+   ========================================== */
+
+.navbar {
+    background-color: #ffffff !important;
+
+    padding: 18px 0;
+
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: 800;
+
+    letter-spacing: -0.5px;
+
+    color: var(--primary-color) !important;
+}
+
+.navbar-brand:hover {
+    color: var(--primary-dark) !important;
+}
+
+
+/* ==========================================
+   HERO / WELCOME SECTION
+   ========================================== */
+
+.hero-section {
+    padding: 90px 20px;
+}
+
+.hero-section h1 {
+    color: var(--heading-color);
+}
+
+.hero-section p {
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color);
+}
+
+h2 {
+    letter-spacing: -0.6px;
+}
+
+h3 {
+    letter-spacing: -0.4px;
+}
+
+
+/* ==========================================
+   CARDS
+   ========================================== */
+
+.card {
+    background-color: var(--card-background);
+
+    border-radius: 16px;
+
+    border: 1px solid var(--border-color);
+
+    box-shadow: 0 3px 14px rgba(15, 23, 42, 0.035);
+
+    transition:
+            transform 0.2s ease,
+            box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 26px rgba(15, 23, 42, 0.07);
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card h3 {
+    font-weight: 700;
+}
+
+
+/* ==========================================
+   FINANCIAL SUMMARY
+   ========================================== */
+
+.summary-amount {
+    font-weight: 800;
+
+    letter-spacing: -0.7px;
+
+    overflow-wrap: anywhere;
+}
+
+.text-success {
+    color: var(--success-color) !important;
+}
+
+.text-danger {
+    color: var(--danger-color) !important;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.text-secondary {
+    color: var(--muted-color) !important;
+}
+
+
+/* ==========================================
+   BUTTONS
+   ========================================== */
+
+.btn {
+    border-radius: 9px;
+
+    font-weight: 600;
+
+    padding: 10px 18px;
+
+    transition:
+            background-color 0.2s ease,
+            border-color 0.2s ease,
+            box-shadow 0.2s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+}
+
+.btn-success:hover {
+    background-color: #15803d;
+    border-color: #15803d;
+}
+
+.btn-outline-danger:hover {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+}
+
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 13px;
+}
+
+
+/* ==========================================
+   FORMS
+   ========================================== */
+
+.form-label {
+    color: var(--heading-color);
+
+    font-size: 14px;
+    font-weight: 600;
+
+    margin-bottom: 7px;
+}
+
+.form-control,
+.form-select {
+    border-radius: 9px;
+
+    border: 1px solid #cbd5e1;
+
+    padding: 11px 13px;
+
+    font-size: 14px;
+
+    background-color: #ffffff;
+
+    transition:
+            border-color 0.2s ease,
+            box-shadow 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+
+    box-shadow:
+            0 0 0 3px rgba(37, 99, 235, 0.12);
+
+    outline: none;
+}
+
+.form-control::placeholder {
+    color: #94a3b8;
+}
+
+
+/* ==========================================
+   TABLES
+   ========================================== */
+
+.table {
+    margin-bottom: 0;
+
+    font-size: 14px;
+}
+
+.table thead th {
+    background-color: #f8fafc;
+
+    color: var(--heading-color);
+
+    font-weight: 700;
+
+    border-bottom: 2px solid var(--border-color);
+
+    padding: 15px 14px;
+
+    white-space: nowrap;
+}
+
+.table tbody td {
+    padding: 14px;
+
+    border-bottom: 1px solid #edf2f7;
+
+    vertical-align: middle;
+}
+
+.table-hover tbody tr:hover td {
+    background-color: #f1f5ff;
+}
+
+.table-responsive {
+    border-radius: 10px;
+}
+
+.budget-table th,
+.budget-table td {
+    vertical-align: middle;
+}
+
+
+/* ==========================================
+   BADGES
+   ========================================== */
+
+.badge {
+    padding: 7px 11px;
+
+    border-radius: 7px;
+
+    font-weight: 600;
+    font-size: 12px;
+}
+
+
+/* ==========================================
+   ALERTS
+   ========================================== */
+
+.alert {
+    border-radius: 11px;
+
+    padding: 14px 18px;
+
+    font-size: 14px;
+
+    border-width: 1px;
+}
+
+.alert-success {
+    background-color: #f0fdf4;
+    border-color: #bbf7d0;
+    color: #166534;
+}
+
+.alert-warning {
+    background-color: #fffbeb;
+    border-color: #fde68a;
+    color: #92400e;
+}
+
+.alert-danger {
+    background-color: #fef2f2;
+    border-color: #fecaca;
+    color: #991b1b;
+}
+
+.alert-info {
+    background-color: #eff6ff;
+    border-color: #bfdbfe;
+    color: #1e40af;
+}
+
+
+/* ==========================================
+   CHARTS
+   ========================================== */
+
+.chart-container {
+    position: relative;
+
+    width: 100%;
+    height: 320px;
+}
+
+canvas {
+    max-width: 100%;
+}
+
+
+/* ==========================================
+   BUDGET PROGRESS BARS
+   ========================================== */
+
+.budget-progress {
+    height: 14px;
+
+    background-color: #e9ecef;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.budget-progress .progress-bar {
+    border-radius: 20px;
+}
+
+.budget-tracking-item {
+    background-color: #ffffff;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 12px;
+
+    padding: 18px;
+
+    margin-bottom: 16px;
+}
+
+.budget-tracking-item:hover {
+    border-color: #cbd5e1;
+}
+
+
+/* ==========================================
+   SPACING
+   ========================================== */
+
+.container.my-5 {
+    margin-top: 35px !important;
+    margin-bottom: 50px !important;
+}
+
+.card .card-body > h3:first-child {
+    margin-top: 0;
+}
+
+
+/* ==========================================
+   ACCESSIBILITY
+   ========================================== */
+
+.btn:focus-visible,
+.form-control:focus-visible,
+.form-select:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+
+/* ==========================================
+   MOBILE RESPONSIVENESS
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding: 14px 0;
+    }
+
+    .navbar-brand {
+        font-size: 20px;
+    }
+
+    .hero-section {
+        padding: 55px 15px;
+    }
+
+    .card-body {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 21px;
+    }
+
+    .summary-amount {
+        font-size: 24px;
+    }
+
+    .chart-container {
+        height: 280px;
+    }
+
+    .table {
+        font-size: 13px;
+    }
+
+    .btn {
+        padding: 9px 14px;
+    }
+
+    .budget-tracking-item {
+        padding: 14px;
+    }
+}
+
+
+/* ==========================================
+   SMALL MOBILE SCREENS
+   ========================================== */
+
+@media (max-width: 480px) {
+
+    .container.my-5 {
+        margin-top: 20px !important;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .summary-amount {
+        font-size: 22px;
+    }
+
+    .chart-container {
+        height: 250px;
+    }
+
+    .table thead th,
+    .table tbody td {
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 13px;
+    }
+}
+
+
+/* ==========================================
+   REDUCED MOTION
+   ========================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .card,
+    .btn,
+    .form-control,
+    .form-select {
+        transition: none;
+    }
+
+    .card:hover {
+        transform: none;
+    }
+}
